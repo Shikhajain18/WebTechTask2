@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<!-- CSS code -->
+	<style>
+		h1 {
+			color: blue;
+		}
+		a {
+			color: white;
+			text-decoration: none;
+		}
+		p{
+			color: white;
+		}
+		.card {
+			background-color: transparent;
+			width: 250px;
+			height: 250px;
+			perspective: 1000px;
+		}
+		.card-inner {
+			position: relative;
+			width: 100%;
+			height: 100%;
+			text-align: center;
+			transition: transform 0.6s;
+			transform-style: preserve-3d;
+			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+		}
+		.card:hover .card-inner {
+			transform: rotateY(180deg);
+		}
+		.card-front, .card-back {
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			backface-visibility: hidden;
+		}
+		.card-front {
+			background-color: blue;
+			color: black;
+		}
+		.card-back {
+			background-color: black;
+			transform: rotateY(180deg);
+		}
+	</style>
+</head>
+
+<body>
+		<center><h2>Our Friends</h2></center>
+<br>
+<br>
+		<div class="row">
+		  
+			
+		  <div class="col-md-3"> 	
+			<div class="card">
+				<div class="card-inner">
+					<div class="card-front">
+						<img src="gargi.jpg" style="width:250px;height:250px;">
+					</div>
+					
+					<div class="card-back">
+						<h1>Gargi Sharma</h1>
+						<p>Humble</p>
+					</div>
+				</div>
+			</div>
+		  </div>
+
+          <div class="col-md-3">		  
+			<div class="card">
+				<div class="card-inner">
+					<div class="card-front">
+						<img src="himanshu.jpg" style="width:250px;height:250px;">
+					</div>
+					
+					<div class="card-back">
+						<h1>Himanshu Singh Rao</h1>
+						<p>Adventurous</p>
+					</div>
+				</div>
+			</div>
+		  </div>
+			
+		  <div class="col-md-3">	
+			<div class="card">
+				<div class="card-inner">
+					<div class="card-front">
+						<img src="shikha.jpg" style="width:250px;height:250px;">
+					</div>
+					
+					<div class="card-back">
+						<h1>Shikha Jain</h1>
+						<p>Sweet</p>
+					</div>
+				</div>
+			</div>
+		  </div>	
+		  <div class="col-md-3">
+			<div class="card">
+				<div class="card-inner">
+					<div class="card-front">
+						<img src="jinal.jpg" style="width:250px;height:250px;">
+					</div>
+					
+					<div class="card-back">
+						<h1>Jinal Gandhi</h1>
+						<p>Cute</p>
+					</div>
+				</div>
+			</div>
+		  </div>
+		</div>
+</body>
+
+</html>
